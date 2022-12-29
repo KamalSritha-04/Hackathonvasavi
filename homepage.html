@@ -6,16 +6,17 @@
 <body>
 <div>
   <h1>HEALTH CARE</h1> 
+  <!-- NAV BAR -->
   <nav>
       <a href="#home"> Home </a>
       <a href="/Users/kamalsritha/Desktop/vasavi /about.html"> About </a>
-      <a href="#HELP"> Help</a>
       <a href="/Users/kamalsritha/Desktop/vasavi /contactus.html"> Contact</a>
       <a href="/Users/kamalsritha/Desktop/vasavi /register.html">Signup</a>
-      <a href="/Users/kamalsritha/Desktop/vasavi /login1.html">Login</a>
+      <a href="/Users/kamalsritha/Desktop/vasavi /login.html">Login</a>
   </nav>
   </div>
   <link href="pic.css" rel="stylesheet">
+  <!-- SEARCH BAR -->
 <h4>Find doctors</h4>
 <!DOCTYPE html>
 <html>
@@ -41,7 +42,7 @@
   <div class="bottom-right"></div>
   <div class="centered">WE ARE HERE TO SERVE YOU</div>
 </div> -->
-<head>
+<!-- <head>
     <link rel="stylesheet" href="css/background.css">
 </head>
 <div class="image">
@@ -49,11 +50,86 @@
       <h1>WE CARE FOR YOU</h1>
     </div>
   </div>
-<head>
-    <link rel="stylesheet" href="css/consult.css">
-</head>
+<head> -->
+  <!-- MULTI PAGE SLIDESHOW -->
+  <!DOCTYPE html>
+<html>
+<head><!DOCTYPE html>
+  <html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="multipage.css" rel="stylesheet">
+  </head>
+  <body>
+  
+  <div class="slideshow-container">
+  
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="https://www.onlyhealthmarketing.com/media/1562/only-health-homepage-banner.jpg?mode=crop&width=2000&height=500" style="width:100%">
+    <div class="text">CARE AT YOUR DOORSTEP</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="https://www.onlyhealthmarketing.com/media/1563/only-health-reputation-banner.jpg?mode=crop&width=2000&height=500" style="width:100%">
+    <div class="text">WE TREAT YOU WITH CARE</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="https://www.onlyhealthmarketing.com/media/1557/home-page-banner.jpg?mode=crop&width=2000&height=500" style="width:100%">
+    <div class="text">ONE STOP FOR HEALTH NEEDS</div>
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+  
+  <script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+  
+  <head>
+    <link rel="stylesheet" href="css/Users/kamalsritha/Desktop/vasavi /contactus.html">
+  </head>
+
+<!-- CIRCLE IMAGES  (CONSULTATION DOCS)-->
 <h3>
-    Consultation With Verified Doctors In All Specialists
+    Consultation With Verified Doctors(All Specialists)
 </h3>
 <div class="row">
     <div >
@@ -85,6 +161,7 @@
       </figure>
     </div>
   </div>
+  <!-- GALLERY IMAGES -->
   <h3>Find Experienced Doctors</h3>
   <head>
     <link rel="stylesheet" href="css/typesofdoc.css">
@@ -116,7 +193,70 @@
     </figure>
   </div>
 </div>
+ 
+<!-- <head>
+  <link rel="stylesheet" href="css//Users/kamalsritha/Desktop/vasavi /img.css">
+</head>
+<section>
+  <div id="div1">
+    <img src="https://images.ctfassets.net/oc83wx5cwffk/spu_wysiwyg_fid30318_asset/5be584bd64628d4b521375eeaad6ad0b/lab_samples12822469_M.jpg" height="400" width="700">
+  </div>
+  <div id="div2">
+    <h2>Book Lab Test</h2>
+  </div>
+</section> -->
 <html>
-  <html>
-    <body>
+<head>
+  <link rel="stylesheet" href="css/Users/kamalsritha/Desktop/vasavi/img.css">
+</head>
+<body>
+<div>
+  <div>
+    <img src="https://www.eehealth.org/-/media/images/modules/blog/posts/2020/11/lab-tests.jpg"style="float: right";margin-bottom:25px; height="350">
+  </div>
+  <div class="left">
+    <h3>Book Lab Test</h3>
+    <h4><p>Search for tests and packages and seamlessly book a home sample collection.</p>
+    <p>We will send a certified professional to your place to assist you with the sample collection</p>
+    <p>We will email you the reports.</p></h4>
+    <br></br>
+    <a href="/Users/kamalsritha/Desktop/vasavi /booktest.html">Book Test</a>
+    <br>
+    </br>
+    <br>
+    </br><br></br><br></br><br></br><br></br><br></br>
+  </div>
+</div>
+</body>
+</html>
+
+
+
+<html>
+<head>
+  <link rel="stylesheet" href="css/Users/kamalsritha/Desktop/vasavi/img.css">
+</head>
+<body>
+<div>
+  <div>
+    <img src="https://media.istockphoto.com/id/1036131880/photo/efficient-pharmacy-operations-thanks-to-teamwork.jpg?b=1&s=170667a&w=0&k=20&c=phSLL6x0WgHYtwp4PrmkB41qmyX5TiTbk5EqyhHzo2U="  style="float:left";margin-bottom:25px; height="350" width="500">
+  </div>
+  <div class="right">
+    <h3 align="center">Buy your medicines</h3>
+
+  </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
 
